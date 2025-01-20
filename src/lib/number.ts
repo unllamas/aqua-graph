@@ -4,7 +4,7 @@ export function formatBigNumbers(value: number, decimal?: boolean) {
     number = Number(value.toFixed(2));
   }
 
-  let format = new Intl.NumberFormat().format(number);
+  const format = new Intl.NumberFormat().format(number);
 
   return format;
 }
